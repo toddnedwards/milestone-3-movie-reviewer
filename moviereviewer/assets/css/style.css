@@ -1,0 +1,109 @@
+/* all pages */
+
+
+
+/* header */
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 50px 0 50px 0;
+    background-color: #9c0000;
+
+}
+
+.navbar {
+    background-image: url('/moviereviewer/images/cinema-seats.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    opacity: 0.7;
+}
+
+body {
+    height: 100%;
+}
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background-color: #000000;
+    color: white;
+}
+
+.footer-contact {
+    text-align: left;
+    padding-left: 100px
+}
+
+.footer-socials {
+    text-align: left;
+}
+
+.social-link a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+
+.social-link a:hover {
+    color: #ff0000
+}
+
+
+/* index.html css */
+
+
+/* About movie reviewers cards section */
+
+.about {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about i {
+    color: #ff0000;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.about i:hover {
+    color: #848484;
+    transition: 0.6s;
+}
+
+.about h2 {
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+/* reviews section */
+
+.reviews-header h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.reviews {
+    line-height: 1.5;
+}
+
+
+/* login.html css */
+
+.login-form {
+    padding: 100px;
+}

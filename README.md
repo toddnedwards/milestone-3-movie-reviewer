@@ -37,3 +37,12 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+
+
+
+#####
+
+logo created with canva: https://www.canva.com/design/DAGFG4znCXM/zShglU5ey879iNSLsGFE7A/edit
+
+theatre image from pexels: https://www.pexels.com/photo/theater-interior-109669/

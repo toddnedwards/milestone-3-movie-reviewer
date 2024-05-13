@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Movie Reviewer</title>
+    <!---bootstrap css---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---css style---->
+    <link rel="stylesheet" href="/moviereviewer/assets/css/style.css">
+    <!---fontawesome icons---->
+    <script src="https://kit.fontawesome.com/e46a729e48.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+<!-- Responsive navigation -->
+<nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/moviereviewer/static/templates/index.html"><img
+          src="/moviereviewer/images/movie-reviewer-logo.png" id="logo" alt="Movie Reviewer logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-nav justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/moviereviewer/static/templates/index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/moviereviewer/static/templates/login.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/moviereviewer/static/templates/register.html">Register</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+  <div class="row justify-content-center mb-6 login-form">
+    <div class="col-md-8">
+        <form method="POST" action="/login">
+            <div>
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" minlength="6" maxlength="20" required="">
+            </div>
+            <div class="mb-3">
+              <i class="fa-solid fa-key" aria-hidden="true"></i>
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" 
+                     minlength="8" pattern="(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
+                     title="Password must be at least 8 characters and contain a number and a special character" required="">
+              <div id="passwordHelp" class="form-text">
+                  Password must be at least 8 characters and contain a number and a special character.
+              </div>
+          </div>
+          
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-secondary">Login</button>
+            </div>
+        </form>
+    </div>
+    <!-- Register link for users without an account -->
+    <div class="row justify-content-center mt-3">
+        <div class="col text-center">
+            <p>New around here? <a href="/register">Create an account</a></p>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-4 footer-contact">
+            <h4>Contact Us</h4>
+            <p class="email"><a href="mailto:hello@moviereview.com"><i class="fa-solid fa-envelope"></i>
+                admin@riffreview.com</a></p>
+          </div>
+          <div class="col-md-4 offset-md-4 footer-socials">
+            <h4>Follow Us On Social Media!</h4>
+            <p class="social-link"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                Facebook</a></p>
+            <p class="social-link"><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+                Twitter (X)</a></p>
+            <p class="social-link"><a href="https://www.instagram.com/""><i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                Instagram</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+</html>
